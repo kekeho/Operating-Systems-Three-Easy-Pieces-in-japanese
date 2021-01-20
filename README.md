@@ -1,3 +1,20 @@
+# Operating Systems: Three Easy Pieces in Japanse *PDF Edition*
+
+[syarochan/Operating-Systems-Three-Easy-Pieces-in-japanese](https://github.com/syarochan/Operating-Systems-Three-Easy-Pieces-in-japanese)を, LaTeXでPDF化した.
+
+## Build
+
+nim 1.4.2以上, pandoc, 日本語latex環境(platexを含む)が必要.
+
+```
+cd conv2latex/
+nimble build
+./conv2latex
+```
+
+---
+
+以下, fork元[syarochan/Operating-Systems-Three-Easy-Pieces-in-japanese](https://github.com/syarochan/Operating-Systems-Three-Easy-Pieces-in-japanese)のfork時点(2021/01/20)でのREADME
 # "Operating Systems: Three Easy Pieces"の日本語翻訳
 本家サイト：http://pages.cs.wisc.edu/~remzi/OSTEP/   
 ※Dialogue、Summary、Homeworkの翻訳はしていません。

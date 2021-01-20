@@ -18,6 +18,22 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# binary
+conv2latex/conv2latex
+
+# latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.dvi
+*.toc
+content_before.tex
+
+# smb
+.smbdelete*
+
 # =========================
 # Operating System Files
 # =========================
