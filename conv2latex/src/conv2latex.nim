@@ -47,7 +47,8 @@ when isMainModule:
           line = replaceImagePath(f.split('/')[1], line)
           line = replaceInvalidStr(line)
           allfp.writeLine(line)
-
+        
+        allfp.writeLine("\\newpage")
         allfp.writeLine("")
 
   # pandoc

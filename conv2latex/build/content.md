@@ -42,6 +42,7 @@
 
 教授：私もそうですね、悲しいことに。まぁ、とりあえずやっていきましょう！
 
+\newpage
 
 # 2.オペレーティングシステムの概要
 
@@ -255,6 +256,7 @@ Swaminathan Sundararaman, Sriram Subramanian, Abhishek Rajimwale, Andrea C. Arpa
 FAST ’10, San Jose, CA, February 2010  
 The great thing about writing your own class notes: you can advertise your own research. But this paper is actually pretty neat — when a file system hits a bug and crashes, Membrane auto-magically restarts it, all without applications or the rest of the system being affected.  
 
+\newpage
 
 ## 3.仮想化に関する対話
 
@@ -292,6 +294,7 @@ The great thing about writing your own class notes: you can advertise your own r
 
 教授：心配しないでください。私は桃が好きではないので。それでは、始めましょう！
 
+\newpage
 
 # 4. The Abstraction: The Process
 
@@ -425,6 +428,7 @@ V.A. Vyssotsky, F. J. Corbato, R. M. Graham
 Fall Joint Computer Conference, 1965  
 An early paper on Multics, which described many of the basic ideas and terms that we find in modern systems. Some of the vision behind computing as a utility are finally being realized in modern cloud systems.
 
+\newpage
 
 # 5. 間奏：プロセスAPI
 >> ASIDE：INTERLUDES  
@@ -542,6 +546,7 @@ W. Richard Stevens and Stephen A. Rago
 Addison-Wesley, 2005  
 All nuances and subtleties of using UNIX APIs are found herein. Buy this book! Read it! And most importantly, live it.
 
+\newpage
 
 # 6. Mechanism: Limited Direct Execution
 
@@ -738,6 +743,7 @@ Hovav Shacham
 CCS ’07, October 2007  
 One of those awesome, mind-blowing ideas that you’ll see in research from time to time. The author shows that if you can jump into code arbitrarily, you can essentially stitch together any code sequence you like (given a large code base); read the paper for the details. The technique makes it even harder to defend against malicious attacks, alas.
 
+\newpage
 
 # 7. Scheduling: Introduction
 
@@ -925,6 +931,7 @@ http://en.wikipedia.org/wiki/You can’t have your cake and eat it
 Wikipedia, as of December 2015  
 The best part of this page is reading all the similar idioms from other languages. In Tamil, you can’t “have both the moustache and drink the soup.”
 
+\newpage
 
 # 8. Scheduling:The Multi-Level Feedback Queue
 
@@ -1106,6 +1113,7 @@ SOSP ’95
 A fun paper about some very cool ideas in file systems, including how applications can give the OS
 advice about what files it is accessing and how it plans to access them
 
+\newpage
 
 # 9. Scheduling: Proportional Share
 この章では、proportional share scheduler(比例共有スケジューラ)と呼ばれる別のタイプのスケジューラを検討します。これは、時々 fair share schedulerとも呼ばれます。比例共有は、単純な概念に基づいています。つまり、処理時間や応答時間を最適化する代わりに、スケジューラは各ジョブがCPU時間の一定割合を取得することを保証します。
@@ -1237,6 +1245,7 @@ Carl A. Waldspurger
 OSDI ’02, Boston, Massachusetts  
 The paper to read about memory management in VMMs (a.k.a., hypervisors). In addition to being relatively easy to read, the paper contains numerous cool ideas about this new type of VMM-level memory management.
 
+\newpage
 
 # 10. Multiprocessor Scheduling (Advanced)
 
@@ -1408,6 +1417,7 @@ Ion Stoica and Hussein Abdel-Wahab
 Technical Report TR-95-22, Old Dominion University, 1996  
 A tech report on this cool scheduling idea, from Ion Stoica, now a professor at U.C. Berkeley and world expert in networking, distributed systems, and many other things.
 
+\newpage
 
 # 13 The Abstraction: Address Spaces
 
@@ -1553,6 +1563,7 @@ Michael M. Swift, Brian N. Bershad, Henry M. Levy
 SOSP 2003  
 The first paper to show how microkernel-like thinking can improve operating system reliability.
 
+\newpage
 
 # 14 Interlude: Memory API
 この章で、UNIXシステムでのメモリ割り当てインタフェースについて説明します。提供されるインターフェイスは非常にシンプルです。
@@ -1730,6 +1741,7 @@ Tim Werthman
 Available: www.nds.rub.de/lehre/seminar/SS06/Werthmann BufferOverflow.pdf  
 A nice survey of buffer overflows and some of the security problems they cause. Refers to many of the famous exploits.
 
+\newpage
 
 # 15 Mechanism: Address Translation
 CPUの仮想化の開発では、限定直接実行(LDE)と呼ばれる一般的なメカニズムに焦点を当てました。LDEの背後にある考え方は単純です。ほとんどの場合、プログラムをハードウェア上で直接実行させたいです。しかし、特定のキーポイント(プロセスがシステムコールを発行するときやタイマー割り込みが発生したときなど)では、OSが関与し、「正しい」ことが起こるように調整します。したがって、OSは、少しハードウェアをサポートして、効率的な仮想化を実現するために、実行中のプログラムから抜け出すために最善を尽くします。しかし、これらの重要な時点で介在することにより、OSはハードウェアの制御を確実に維持します。効率性と制御性は、最新のオペレーティングシステムの主な目標の2つです。
@@ -1904,6 +1916,7 @@ A terrific paper about how you can use compiler support to bound memory referenc
 Waciuma Wanjohi, October 2017  
 Amazingly, this enterprising reader found the answer via google’s Ngram viewing tool (available at the following URL: http://books.google.com/ngrams). The answer, thanks to Mr. Wanjohi: “It’s only since about 1970 that ’wreak havoc’ has been more popular than ’wreak vengeance’. In the 1800s, the word wreak was almost always followed by ’his/their vengeance’.” Apparently, when you wreak, you are up to no good, but at least wreakers have some options now.  
 
+\newpage
 
 # 16 Segmentation
 これまでは、各プロセスのアドレス空間全体をメモリに入れていました。ベースレジスタと境界レジスタを使用すると、OSは物理メモリの異なる部分にプロセスを簡単に再配置できます。しかし、あなたはこれらのアドレス空間について興味深いことに気づいたかもしれません。スタックとヒープの間であり中央に大きな空き領域があります。
@@ -2081,6 +2094,7 @@ In International Workshop on Memory Management
 Scotland, United Kingdom, September 1995  
 A great survey paper on memory allocators.
 
+\newpage
 
 ## 17 Free-Space Management
 この章では、mallocライブラリ(プロセスのヒープのページを管理する)であろうと、OS自体(アドレスの一部を管理するものであろうと)を問わず、メモリ管理システムの基本的な側面について議論するために、プロセスのスペース)。具体的には、free space managementを取り巻く課題について議論していきます。
@@ -2340,6 +2354,7 @@ International Workshop on Memory Management
 Kinross, Scotland, September 1995  
 An excellent and far-reaching survey of many facets of memory allocation. Far too much detail to go into in this tiny chapter!
 
+\newpage
 
 # 18 Paging: Introduction
 スペース管理問題を解決するには、オペレーティングシステムが2つのアプローチのうちの1つをとると言われることがあります。第1のアプローチは、仮想メモリのセグメンテーションで見たように、可変サイズの断片に分割することです。残念なことに、この解決策には固有の難点があります。特に、スペースを異なるサイズのチャンクに分割すると、スペース自体が断片化する可能性があり、時間の経過とともに割り当てがより困難になります。
@@ -2546,6 +2561,7 @@ Volume 21, Issue 1 (January 1978), pp. 4-12
 Special issue on computer architecture  
 This paper is a great retrospective of some of the history of the development of some important computer systems. As we sometimes forget in the US, many of these new ideas came from overseas.
 
+\newpage
 
 # 19 Paging: Faster Translations (TLBs)
 仮想メモリをサポートするためのコアメカニズムとしてページングを使用すると、パフォーマンスのオーバーヘッドが発生する可能性があります。アドレス空間を小さい固定サイズの単位(すなわち、ページ)にすることにより、ページングは大量のマッピング情報を必要とします。そのマッピング情報は一般的に物理メモリに格納されるため、ページングは論理的にはプログラムによって生成された各仮想アドレスに対して余分なメモリルックアップを必要とします。命令のフェッチや明示的なロードやストアの前に、変換情報のためのメモリへの移動は非常に遅いです。
@@ -2769,6 +2785,7 @@ David L. Weaver and Tom Germond, September 2000
 SPARC International, San Jose, California  
 Available: http://www.sparc.org/standards/SPARCV9.pdf
 
+\newpage
 
 # 20 Paging: Smaller Tables
 ここでは、ページングが導入する第2の問題に取り組んでいきます。ページテーブルが大きすぎるため、メモリを多く消費してしまいます。まずは、線形ページテーブルから始めましょう。線形ページテーブルはメモリ規模がかなり大きくなります。ここでも、4KB(2 ^ 12バイト)ページと4バイトのページテーブルエントリを持つ32ビットアドレス空間(2 ^ 32バイト)を仮定します。したがって、アドレス空間には約100万の仮想ページがあります(2 ^ 32/2 ^ 12)。ページテーブルエントリサイズを掛け合わせると、ページテーブルのサイズが4MBであることがわかります。また、システム内のすべてのプロセスについて1ページテーブルがあります。100個のアクティブなプロセス(現代のシステムでは一般的ではない)で、ページテーブルのためだけに数百メガバイトのメモリを割り当てます。その結果、我々はこの重い負担を軽減するための技術を模索しています。
@@ -2959,6 +2976,7 @@ A nice paper showing all the details you have to get right to incorporate large 
 Available: http://www.multicians.org/history.html  
 This amazing web site provides a huge amount of history on the Multics system, certainly one of the most influential systems in OS history. The quote from therein: “Jack Dennis of MIT contributed influential architectural ideas to the beginning of Multics, especially the idea of combining paging and segmentation.” (from Section 1.2.1)
 
+\newpage
 
 # 21 Beyond Physical Memory: Mechanisms
 ここまでは、アドレス空間は非現実的に小さく、物理メモリに収まると仮定しました。実際には、実行中のすべてのプロセスのアドレス空間がすべてメモリに収まると仮定しています。我々は今、これらの大きな仮定を緩和し、多数の並行して動作する大規模なアドレス空間をサポートしたいと仮定します。
@@ -3070,6 +3088,7 @@ Hank Levy and P. Lipman
 IEEE Computer, Vol. 15, No. 3, March 1982  
 Not the first place where such clustering was used, but a clear and simple explanation of how such a mechanism works.
 
+\newpage
 
 ## 22 Beyond Physical Memory: Policies
 仮想メモリマネージャでは、空きメモリが大量にある場合は簡単です。ページフォルトが発生した場合、フリーページリストに空きページがあり、それをフォールトページに割り当てます。
@@ -3293,6 +3312,7 @@ Nimrod Megiddo and Dharmendra S. Modha
 FAST 2003, February 2003, San Jose, California  
 An excellent modern paper about replacement algorithms, which includes a new policy, ARC, that is now used in some systems. Recognized in 2014 as a “Test of Time” award winner by the storage systems community at the FAST ’14 conference.
 
+\newpage
 
 # 23 The VAX/VMS Virtual Memory System
 仮想メモリの調査を終了する前に、VAX/VMSオペレーティング・システム[LL82]にある、きれいに整った仮想メモリ・マネージャの1つを詳しく見てみましょう。ここでは、以前の章でもたらされた概念のいくつかが完全なメモリマネージャにどのように集まっているかを示すためのシステムについて説明します。
@@ -3414,6 +3434,7 @@ Rollins Turner and Henry Levy
 SIGMETRICS ’81, Las Vegas, Nevada, September 1981  
 A short paper that shows for some workloads, segmented FIFO can approach the performance of LRU
 
+\newpage
 
 \part{Concurrency}
 # 26 Concurrency: An Introduction
@@ -3622,6 +3643,7 @@ W. Richard Stevens and Stephen A. Rago
 Addison-Wesley, 2005  
 As we’ve said many times, buy this book, and read it, in little chunks, preferably before going to bed. This way, you will actually fall asleep more quickly; more importantly, you learn a little more about how to become a serious UNIX programmer.
 
+\newpage
 
 # 27 Interlude: Thread API
 この章では、スレッドAPIの主要部分について簡単に説明します。各部分については、APIの使い方を示すので、以降の章ではさらに詳しく説明します。詳細は、様々な書籍やオンライン情報源[B89、B97、B+96、K+96]で見つけることができます。以降の章では、ロックや条件変数の概念をよりゆっくりと紹介しています。これらには多くの例があります。したがって、この章は参考文献のように使用してください。
@@ -3829,6 +3851,7 @@ Weiwei Xiong, Soyeon Park, Jiaqi Zhang, Yuanyuan Zhou, Zhiqiang Ma
 OSDI 2010, Vancouver, Canada  
 This paper shows how seemingly simple synchronization code can lead to a surprising number of bugs. Use condition variables and do the signaling correctly!  
 
+\newpage
 
 # 28 Locks
 並行処理の導入から同時プログラミングの基本的な問題の1つがわかりました。一連の命令を原子性で実行したいのですが、単一プロセッサ(または複数のプロセッサで同時に実行される複数のスレッド)に割り込みがあるため、私たちはできませんでした。この章では、ロックと呼ばれるものを導入して、この問題を直接攻撃しています。プログラマは、ソースコードにロックを付けてクリティカルセクションの周りに置くことで、そのようなクリティカルセクションが単一のアトミック命令であるかのように実行するようにします。
@@ -4204,6 +4227,7 @@ SPARC International, San Jose, California
 Available: http://www.sparc.org/standards/SPARCV9.pdf  
 Also see: http://developers.sun.com/solaris/articles/atomic sparc/ for some more details on Sparc atomic operations.
 
+\newpage
 
 # 29 Lock-based Concurrent Data Structures
 ロックの説明を終わる前に、いくつかの一般的なデータ構造でロックを使用する方法をまず説明します。データ構造体にロックを追加してスレッドで使用できるようにすると、構造体のスレッドが安全になります。もちろん、そのようなロックがどのように追加されるかは、データ構造の正確さとパフォーマンスの両方を決定します。
@@ -4374,6 +4398,7 @@ Swaminathan Sundararaman, Yupu Zhang, Sriram Subramanian, Andrea C. Arpaci-Dusse
 FAST ’11, San Jose, CA, February 2011  
 Our work on removing possibly-failing calls to malloc from kernel code paths. The idea is to allocate all potentially needed memory before doing any of the work, thus avoiding failure deep down in the storage stack.
 
+\newpage
 
 # 30 Condition Variables
 これまでのところ、ロックの概念を開発し、ハードウェアとOSの適切な組み合わせで適切に構築する方法を見てきました。残念ながら、ロックは、並行プログラムを構築するために必要な唯一の方法ではありません。
@@ -4561,6 +4586,7 @@ A terrific paper about how to actually implement signaling and condition variabl
 George Orwell, 1949, Secker and Warburg  
 A little heavy-handed, but of course a must read. That said, we kind of gave away the ending by quoting the last sentence. Sorry! And if the government is reading this, let us just say that we think that the government is “double plus good”. Hear that, our pals at the NSA?
 
+\newpage
 
 # 31 Semaphores
 今のところわかっているように、関連性のある興味深い並行性の問題を解決するためには、ロックと条件変数の両方が必要です。この数年前に実現した最初の人のひとりは、Edsger Dijkstra(正確な歴史[GR92]を知ることは難しいが)である。グラフ理論[D59]の有名な「最短経路」アルゴリズムで知られている。「Goto Statements Considered Harmful」[D68a](これはすばらしいタイトルです)という名前の構造化プログラミングについて説明し、ここではセマフォー[D68b、D72]と呼ばれる同期プリミティブの導入を検討します。実際、Dijkstraらは、セマフォを同期に関連するすべてのものの単一のプリミティブとして考案しました。表示されるように、セマフォはロックと条件変数の両方として使用できます。
@@ -4820,6 +4846,7 @@ Butler Lampson
 ACM Operating Systems Review, 15:5, October 1983  
 Lampson, a famous systems researcher, loved using hints in the design of computer systems. A hint is something that is often correct but can be wrong; in this use, a signal() is telling a waiting thread that it changed the condition that the waiter was waiting on, but not to trust that the condition will be in the desired state when the waiting thread wakes up. In this paper about hints for designing systems, one of Lampson’s general hints is that you should use hints. It is not as confusing as it sounds.
 
+\newpage
 
 ## 32 Common Concurrency Problems
 研究者は長年にわたり並行性のバグを探すために多大な時間と労力を費やしてきました。初期の作業の多くは、デッドロックに焦点を絞っていました。これは過去の章で触れたことのあるトピックですが、深く[C + 71]に浸透します。最近の研究は、他のタイプの共通の並行性バグ(非デッドロックバグ)の研究に重点を置いています。この章では、実際のコードベースに見られるいくつかの並行処理の問題の例を簡単に見て、どのような問題を把握するかをより深く理解します。したがって、この章の中心的な問題は次のとおりです。
@@ -5047,6 +5074,7 @@ Linus Torvalds and many others
 Available: http://lxr.free-electrons.com/source/mm/filemap.c  
 Thanks to Michael Walfish (NYU) for pointing out this precious example. The real world, as you can see in this file, can be a bit more complex than the simple clarity found in textbooks...
 
+\newpage
 
 # 33 Event-based Concurrency (Advanced)
 これまでは、並列アプリケーションを構築する唯一の方法がスレッドを使用する方法であるかのように、並行性について書いてきました。人生の多くの事のように、これは完全に真実ではありません。具体的には、GUIベースのアプリケーション[O96]といくつかのタイプのインターネットサーバー[PDZ99]の両方で、異なるスタイルの並行プログラミングがよく使用されます。イベントベースの並行処理と呼ばれるこのスタイルは、node.js [N13]などのサーバー側のフレームワークを含む現代的なシステムでは一般的になっていますが、その根本は以下で説明するC/UNIXシステムにあります。
@@ -5218,6 +5246,7 @@ Matt Welsh, David Culler, and Eric Brewer
 SOSP ’01, Banff, Canada, October 2001  
 A nice twist on event-based serving that combines threads, queues, and event-based hanlding into one streamlined whole. Some of these ideas have found their way into the infrastructures of companies such as Google, Amazon, and elsewhere.
 
+\newpage
 
 \part{Persistence}
 # 36 I/O Devices
@@ -5394,6 +5423,7 @@ Washington State Course Homepage
 Available: http://eecs.wsu.edu/˜cs460/cs560/HDdriver.html  
 A nice summary of a simple IDE disk drive’s interface and how to build a device driver for it.  
 
+\newpage
 
 # 37 Hard Disk Drives
 最後の章では、I/Oデバイスの一般的な概念を紹介し、OSがそのような獣とどのように相互作用するかを示しました。この章では、特に1つのデバイス、ハードディスクドライブについて詳しく説明します。これらのドライブは、何十年もの間、コンピュータシステムにおける永続的なデータストレージの主要な形態であり、ファイルシステム技術の開発の多くは、その動作を前提としています。したがって、それを管理するファイルシステムソフトウェアを構築する前に、ディスク操作の詳細を理解することは価値があります。これらの詳細の多くは、RuemmlerとWilkes [RW92]とAnderson、Dykes、Riedel [ADR03]の優れた論文で利用できます。
@@ -5618,6 +5648,7 @@ A data sheet; read at your own risk. Risk of what? Boredom.
 http://www.seagate.com/docs/pdf/datasheet/disc/ds-cheetah-15k-5-us.pdf  
 See above commentary on data sheets.  
 
+\newpage
 
 # 38 Redundant Arrays of Inexpensive Disks (RAIDs)
 ディスクを使用する場合、ディスクを高速化したい場合があります。I/O操作が遅いため、システム全体のボトルネックになる可能性があります。ディスクを使用する場合、ディスクを大きくしたい場合があります。多くのデータをオンラインに置かなければ、ローカルディスクがデータでいっぱいになってしまいます。ディスクを使用する場合、ディスクをより信頼できるものにすることを望みます。ディスクに障害が発生した場合、データがバックアップされていなければ、その重要なデータはすべて失われます。
@@ -5885,6 +5916,7 @@ D. Patterson, G. Gibson, R. Katz.
 SIGMOD 1988  
 This is considered the RAID paper, written by famous authors Patterson, Gibson, and Katz. The paper has since won many test-of-time awards and ushered in the RAID era, including the name RAID itself!
 
+\newpage
 
 # 39 Interlude: Files and Directories
 ここまでは、CPUの仮想化であるプロセスと、メモリの仮想化であるアドレス空間の2つの主要なオペレーティングシステムの抽象化の発展を見てきました。この2つの抽象化によって、プログラムは、あたかも自分の世界であるかのように動くことができます。あたかもそれ自身のプロセッサ(または複数のプロセッサ)、自らのメモリを持っているかのように動くことができます。このような錯覚は、システムのプログラミングをはるかに容易にし、今日ではデスクトップやサーバだけでなく、携帯電話などのプログラマブルなプラットフォーム上でますます普及しています。
@@ -6173,6 +6205,7 @@ W. Richard Stevens and Stephen A. Rago
 Addison-Wesley, 2005  
 We have probably referenced this book a few hundred thousand times. It is that useful to you, if you care to become an awesome systems programmer.
 
+\newpage
 
 # 40 File System Implementation
 この章では、vsfs(Very Simple File System)と呼ばれる単純なファイルシステムの実装を紹介します。このファイルシステムは、一般的なUNIXファイルシステムの簡略化されたバージョンであるため、今日の多くのファイルシステムで見られる基本的なオンディスク構造、アクセス方法、およびさまざまなポリシーを紹介しています。
@@ -6407,6 +6440,7 @@ Mike Nishimoto, Geoff Peck
 USENIX ’96, January 1996, San Diego, CA  
 The first attempt to make scalability of operations, including things like having millions of files in a directory, a central focus. A great example of pushing an idea to the extreme. The key idea behind this file system: everything is a tree. We should have a chapter on this file system too.
 
+\newpage
 
 # 41 Locality and The Fast File System
 UNIXオペレーティングシステムが初めて導入されたとき、UNIXウィザードのKen Thompson氏が最初のファイルシステムを作成しました。"古いUNIXファイルシステム"と呼ぶことにしましょう。それは本当に簡単でした。基本的に、そのデータ構造はディスク上で次のようになりました。  
@@ -6561,6 +6595,7 @@ Keynote Lecture at the ACM SIGMOD Conference (SIGMOD ’98)
 June, 1998  
 A great and simple overview of disk technology trends and how they change over time.
 
+\newpage
 
 # 42 Crash Consistency: FSCK and Journaling
 これまで見てきたように、ファイルシステムは、ファイルシステムから期待される基本的な抽象化をサポートするために必要なファイル、ディレクトリ、その他すべてのメタデータなど、一連のデータ構造を管理します。ほとんどのデータ構造(例えば、実行中のプログラムのメモリ内にあるもの)とは異なり、ファイルシステムのデータ構造は永続的でなければならず、長時間に渡って生き残り、電力損失があってもデータを保持しなければいけません(ハードディスクやデバイスフラッシュベースのSSDのように)
@@ -6878,6 +6913,7 @@ Theodore Ts’o, June, 2001.
 Available: http://e2fsprogs.sourceforge.net/ext2.html  
 A simple Linux file system based on the ideas found in FFS. For a while it was quite heavily used; now it is really just in the kernel as an example of a simple file system.
 
+\newpage
 
 # 43 Log-structured File Systems
 90年代初頭、John Ousterhout教授と大学院生Mendel Rosenblumが率いるバークレー校のグループが、ログ構造ファイルシステム[RO91]と呼ばれる新しいファイルシステムを開発しました。そうする動機は、以下の観察に基づいていました。
@@ -7100,6 +7136,7 @@ Yiying Zhang, Leo Prasath Arulraj, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dus
 FAST ’13, San Jose, California, February 2013  
 Our paper on a new way to build flash-based storage devices. Because FTLs (flash-translation layers) are usually built in a log-structured style, some of the same issues arise in flash-based devices that do in LFS. In this case, it is the recursive update problem, which LFS solves neatly with an imap. A similar structure exists in most SSDs.
 
+\newpage
 
 # 44 Flash-based SSDs
 何十年ものハードディスクドライブの支配から、永続的なストレージデバイスの新しい形態が最近、世界で重要な役割を果たしました。一般にソリッドステートストレージと呼ばれるこのようなデバイスには、ハードドライブのような機械的または可動的な部品はありません。むしろ、メモリとプロセッサによく似たトランジスタから簡単に構築されています。しかし、典型的なランダムアクセスメモリ(例えば、DRAM)とは異なり、このようなソリッドステートストレージデバイス(SSD)は、電力損失にもかかわらず情報を保持するので、データの永続的記憶に使用するための理想的な候補です。
@@ -7411,6 +7448,7 @@ Yiying Zhang, Leo Prasath Arulraj, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dus
 FAST ’13, San Jose, California, February 2013  
 Our research on a new idea to reduce mapping table space; the key is to re-use the pointers in the file system above to store locations of blocks, instead of adding another level of indirection.
 
+\newpage
 
 # 45 Data Integrity and Protection
 これまでに研究してきたファイルシステムの基本的な進歩を超えて、多くの機能を検討する価値があります。この章では、信頼性にまた重点を置いて説明します(RAIDの章で以前にストレージシステムの信頼性を検討したことがあります)。具体的には、ファイルシステムやストレージシステムは、最新のストレージデバイスの信頼性の低い性質を考慮して、データが安全であることをどのように保証する必要がありますか？この一般的な領域は、data integrity(データ完全性)またはdata protection(データ保護)と呼ばれます。そこで、ストレージシステムがデータをあなたに返すときに、ストレージシステムに入力したデータと同じであることを保証するために使用される手法を検討します。
@@ -7624,6 +7662,7 @@ Yupu Zhang, Daniel S. Myers, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau
 MSST ’13, Long Beach, California, May 2013  
 Our own work on adding data protection to the page cache of a system, which protects against memory corruption as well as on-disk corruption.
 
+\newpage
 
 # 48 Distributed Systems
 分散システムは世界の顔を変えました。あなたのWebブラウザが地球上の他のどこかのWebサーバに接続するとき、それは単純な形式のクライアント/サーバ分散システムのように見えます。しかし、GoogleやFacebookなどの最新のWebサービスにコンタクトすると、ただ1台のマシンと対話するだけではありません。これらの複雑なサービスの舞台裏では、大規模な収集(すなわち、数千件)のマシンから構築され、それぞれが協力してサイトの特定のサービスを提供します。したがって、分散システムを研究することが興味深いのは明らかです。実際、それはクラス全体にふさわしいものです。ここでは、主要なトピックのいくつかを紹介します。
@@ -7825,6 +7864,7 @@ Van Jacobson
 SIGCOMM ’88  
 A pioneering paper on how clients should adjust to perceived network congestion; definitely one of the key pieces of technology underlying the Internet, and a must read for anyone serious about systems, and for Van Jacobson’s relatives because well relatives should read all of your papers.
 
+\newpage
 
 # 49 Sun’s Network File System (NFS)
 分散クライアント/サーバーコンピューティングの最初の用途の1つは、分散ファイルシステムの分野でした。このような環境では、多数のクライアントマシンと1つのサーバー(またはいくつか)が存在します。サーバはそのデータをディスクに保存し、クライアントは整形式プロトコルメッセージを通じてデータを要求します。図49.1に基本設定を示します。
@@ -8055,6 +8095,7 @@ Francois-Marie Arouet a.k.a. Voltaire
 Published in 1772  
 Voltaire said a number of clever things, this being but one example. For example, Voltaire also said “If you have two religions in your land, the two will cut each others throats; but if you have thirty religions, they will dwell in peace.” What do you say to that, Democrats and Republicans?
 
+\newpage
 
 # 50 The Andrew File System (AFS)
 Andrew File Systemは、カーネギーメロン大学(CMU)で1980年代に導入されました[H + 88]。カーネギーメロン大学のSatyanarayanan教授(略して「Satya」)が率いるこのプロジェクトの主な目標は簡単でした。それはスケールです。具体的には、サーバーができるだけ多くのクライアントをサポートできるように、分散ファイルシステムをどのように設計できますか？
@@ -8204,4 +8245,5 @@ Werner Vogels
 SOSP ’99, Kiawah Island Resort, South Carolina, December 1999  
 A cool study of Windows workloads, which are inherently different than many of the UNIX-based studies that had previously been done.
 
+\newpage
 
